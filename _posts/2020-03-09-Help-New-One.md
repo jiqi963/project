@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Help Now one
-subtitle: My First Post
-image: /img/hello_world.jpeg
-bigimg: /img/post1.jpg
 ---
 
 # Soulder the new device

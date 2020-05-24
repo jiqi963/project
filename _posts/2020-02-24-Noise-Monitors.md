@@ -2,8 +2,6 @@
 layout: post
 title: Noise Monitors 
 subtitle: Polykid project
-image: /img/broadcom.jpg
-bigimg: /img/post2.jpg
 ---
 
 # Background
