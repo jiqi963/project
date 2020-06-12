@@ -1,14 +1,16 @@
 ---
 layout: post
-title: More Secure
-subtitle: Create the Wiki
+title: Security Documentation
+subtitle: Create the Wiki and analysis
 ---
 
-I have created a Wiki page that include some useful info
+I have created a Wiki page that include some useful info, you can click [Here](https://gitlab.com/iotop/sensitive/-/wikis/home) to access it.
 
 # Wiki page
 
 ## Analysis impact for each server and project
+
+The reason I need to analysis the impact is when I change the password, it will affect some server or files (etc. ingest), by the way, I need to give detail about which part will be affected.
 
 ### Server 
 
@@ -16,7 +18,7 @@ I have created a Wiki page that include some useful info
 
 All our application's data stored there, such as:
 
-Room sensor: 
+- Room sensor
 
 We use MQTT subscription for this app so no ingest files involved.  
 
@@ -24,14 +26,13 @@ Credentials involving this project is in secrets.py file for TTN subscription ke
 
 To update TTN Access key, visit https://console.thethings.meshed.com.au/applications/op_roomsensors and re-generate Access Keys and replace new key in TTN_PASSWORD under op_roomsensors application.
 
-Orokonui: 
+- Orokonui
 
 sensitive information is in .env file and secrets.py.  Updating phpMyAdmin password will require an update of .env file for DB access.
 
-Co2: 
+- Co2:
 
 co2 application is currently not deployed in terms of web application.
-
 
 #### IoT Kate Account
 
@@ -41,11 +42,8 @@ Kate account: Kate IoT account is where our ingest files are sitting.
 
  Updating phpMyAdmin password will require WINSCP to our kate account to update our connect.inc.php file with the updated DB information so TTN can send data to our DB server.
 
-
-
 #### The Things Network
 We use this site to register a new device then get the keys(etc. network, app, device) and config the payload to transfer data to the database.
-
 
 #### Docker
 
@@ -57,10 +55,8 @@ Room Sensors Web App
 
 Access the site we do not need to log in.
 
-
 ##### Room sensor: 
 We use MQTT subscription for this app so no ingest files involved. Credentials involving this project is in secrets.py file for TTN subscription keys, which will need to be updated once a semester. To update TTN Access key, visit https://console.thethings.meshed.com.au/applications/op_roomsensors and re-generate Access Keys and replace new key in TTN_PASSWORD under op_roomsensors application.
-
 
 #### Orokonui Web App
 
@@ -74,15 +70,11 @@ Orokonui: sensitive information is in .env file and secrets.py.  Updating phpMyA
 
 To access our gateway, once the gateway setup, we didn't reconfigure it again very often.
 
-
-
-
 #### RAK Gateways
 
 To access our RAK, once the RAK setup, we didn't reconfigure it again very often.
 
-
-## Known issues
+## Update more Known issues
 
  Change the password for user 'duniot' of phpMyAdmin.
 

@@ -4,18 +4,28 @@ title: Test RoomSensor Merge Request
 subtitle: Testing in local machine for Bee
 ---
 
-# Test Bee's merge
+## Purpose
+This is the related [ticket](https://gitlab.com/iotop/orokonui/-/merge_requests/5)
 
-Bee have update the Orokoni and make some change:
+Bee going to merge it to master branch, so I tested it on my machine.
 
-Removed secret key in settings.py, settingproduction.py.
+the main different is:
 
-Created secrets.py to store SECRET_KEY
+- Removed secret key in settings.py, settingproduction.py.
+- Created secrets.py to store SECRET_KEY
+- Added .secrets.py in gitignore file
+- Updated README.md
 
-Added .secrets.py in gitignore file
+## How
 
-Updated README.md
+I have tested a merge request before, the step almost same, however, this time have a secrets.py file to store the credentials for safety reason.
 
-I test the new version im my machine, also leaved some commit in the [ticket](https://gitlab.com/iotop/orokonui/-/merge_requests/5) .
+the file that secrets.py stored in our sensitive repository, you can grep it from [HERE](https://gitlab.com/iotop/sensitive/-/tree/master/Orokonui).
+
+An important thing is after the test the functionality, need to delete the secrets file then merge to master branch, that the reason we separate the credential with the web app.
+
+## Result
+
+After I test, all function work well and I approved it.
 
 ![test](https://raw.githubusercontent.com/jiqi963/project/master/img/test.png)

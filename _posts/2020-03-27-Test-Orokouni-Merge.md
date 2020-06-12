@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Test Orokouni Merge Request
-subtitle: Testing in local machine
+title: Test Orokouni update
+subtitle: Testing Merge Request in local machine
 ---
 
-## Target
+## Purpose
 This is the related [ticket](https://gitlab.com/iotop/orokonui/-/merge_requests/4)
 
 Bee going to merge it to master branch, so I tested it on my machine.
@@ -40,10 +40,10 @@ Copy secrets.py file from Orokonui folder and place the file in Projectenv/Proje
 
 finally run command `command: python manageDevelopment.py runserver`
 
-![ana3](https://raw.githubusercontent.com/jiqi963/project/master/img/ana3.png)
-
-![ana4](https://raw.githubusercontent.com/jiqi963/project/master/img/ana4.png)
-
 ## Result
 
 After I test, all function work well and I approved it.
+
+![ana3](https://raw.githubusercontent.com/jiqi963/project/master/img/ana3.png)
+
+![ana4](https://raw.githubusercontent.com/jiqi963/project/master/img/ana4.png)
