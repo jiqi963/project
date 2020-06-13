@@ -12,7 +12,9 @@ but Database one is a bit confusing, we can't change the password on GUI page di
 
 ## The main step is:
 
+
 #### Using .ppk to connect to staging server
+
 
 * Download the private key from [HERE](https://gitlab.com/iotop/sensitive/-/blob/master/staging-ssh-rsa.ppk)
 * Open Putty and go to Connection > SSH > Auth and upload ppk file.
@@ -20,7 +22,9 @@ but Database one is a bit confusing, we can't change the password on GUI page di
 * Load session, click 'yes' if prompted by a dialogue box
 * Enter 'user' when prompted for username
 
+
 #### Updating phpMyAdmin Password
+
 
 - Log into DB server with Using .ppk to connect to staging server instruction.
 - Once logged in as user, use ``` mysql -u duniot -p ``` command to login as duniot user.  Copy from sensitive repository and paste current password when prompted.
@@ -29,7 +33,9 @@ but Database one is a bit confusing, we can't change the password on GUI page di
 - To change password to user, UPDATE mysql.user SET ``` Password=PASSWORD('newpassword') WHERE USER='duniot' ```
 - Make sure to tell server to there is a change in mysql table by flush privileges before logging out of DB server.
 
+
 ## Overview
+
 
 I organized Bee and Bex to help me change my password. This one's quite harder than we thinking, even we have a dinner break, it still takes a long time to fix it. Whatever we have learned how to do it.
 
