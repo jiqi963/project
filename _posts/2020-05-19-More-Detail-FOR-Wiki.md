@@ -10,32 +10,35 @@ I still work the sucure issues, I added two sections:
 
 ## Keep our passwords safe
 
-### Keep password and credential in the sensitive repo
-### Don’t Write Your Passwords Down
-### Change passwords on a regular basis (Optional)
-### Do not type passwords on devices or networks you do not control
-### Delete certificate
+##### Keep password and credential in the sensitive repo
+##### Don’t Write Your Passwords Down
+##### Change passwords on a regular basis (Optional)
+##### Do not type passwords on devices or networks you do not control
+##### Delete certificate
 
 [Click](https://gitlab.com/iotop/sensitive/-/wikis/home#keep-our-passwords-safe) to access the section
 
 ## Password Creation Rules
 
-### Use a minimum of 12 characters.
+##### Use a minimum of 12 characters.
 
-### Include characters from at least three of the following types:
+##### Include characters from at least three of the following types:
 
 - Uppercase letters
 - Lowercase letters
 - Numbers
 - Special characters (e.g., $ ! @ #)
 
-### Do not use a "trivial" password that can be easily guessed; for example, do not use:
+##### Do not use a "trivial" password that can be easily guessed; for example, do not use:
 
 - A dictionary word in any language or a dictionary word with numbers appended or prepended to it (for example, "hello22" or "22hello")
 - Repetitive or keyboard patterns (for example, "abc#ABC", "1234", "qwer", "mnbvc", "aaa#aaaa")
 - A division or branch name
 
 [Click](https://gitlab.com/iotop/sensitive/-/wikis/home#password-creation-rules) to access this section
+
+
+### Relationship Diagram.
 
 After I update the password. I understand deeper the relationship for each node(sensor or gateway etc.), to help the new student understand those, I draw a relationship diagram. 
 
