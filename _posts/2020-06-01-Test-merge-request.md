@@ -39,8 +39,11 @@ It is important to preload database with all existed devices that will send data
 ##### Change utils.py
 
 `export const sensorsLink = 'http://localhost:8000/api/sensors/';`
+
 `export const credsLink = 'http://localhost:8000/api-auth/';`
+
 `//export const sensorsLink = 'http://10.25.100.164:80/api/sensors/';`
+
 `//export const credsLink = 'http://10.25.100.164:80/api-auth/';`
 
 Keypoints is Uncomment the local API host.
