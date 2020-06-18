@@ -28,4 +28,32 @@ there is a table show how to convert data type for each format
 
 Bee has similar situation when she builds the co2 sensor, the same code working in the 32u4 rather than M0 board.
 
-I going to try the code in 32u4
+I going to try the code in 32u4 when I arrived OP.
+
+#### Result
+
+###### Arduino node
+
+the function 
+
+`  String str;`
+
+` str = String(dB);`
+
+` str.toCharArray(payload, 3);`
+
+can work in 32u4 and finally I converted the data to string type on Arduino node
+
+###### TTN payload
+
+Because I send the array to TTN, so I need to slice it by this:
+
+`var dbSlice = String.fromCharCode.apply(null, bytes.slice(0,3));`
+
+[THIS SITE](https://www.w3schools.com/jsref/jsref_slice_array.asp) explain how slice work
+
+###### Readable
+
+The data is readable in the database at the moment.
+
+![DB](https://raw.githubusercontent.com/jiqi963/project/master/img/db3.PNG)
