@@ -57,3 +57,12 @@ Because I send the array to TTN, so I need to slice it by this:
 The data is readable in the database at the moment.
 
 ![DB](https://raw.githubusercontent.com/jiqi963/project/master/img/db3.PNG)
+
+
+### One more thing
+
+There still need a thing to do, after I make the code for noise monitors, all functions work well, however, because the Covid-19, I didn't test it on the real environment, so may need to modify the microphone value.
+
+I have drawn a fzz file to show how the wire connect each other, follow it build a real one then test it again.
+
+[README](https://gitlab.com/iotop/polykids-project/-/tree/master/Noise-Monitors-TTN)
